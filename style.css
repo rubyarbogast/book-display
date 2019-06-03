@@ -1,0 +1,79 @@
+.wp-block-book-display-book-block .row-flex .div {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Responsive styles for phone-size screens */
+@media only screen and (max-width: 600px) {
+  /* Flexbox styles */
+  /* Column container */
+  .row-flex {  
+    flex-direction: column;
+  }
+
+  .wp-block-book-display-book-block .titlepage {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .wp-block-book-display-book-block .blurb {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Responsive styles for tablet-sized screens */
+@media only screen and (min-width: 601px) {
+  /* Flexbox Styles */
+  /* Column container */
+  .row-flex {  
+    flex-direction: column;
+  }
+
+  .wp-block-book-display-book-block .titlepage {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  } 
+
+  .wp-block-book-display-book-block .blurb {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/* For larger tablets */
+@media only screen and (min-width: 769px) {
+  /* Flexbox styles */
+  /* Column container */
+  .row-flex {  
+    flex-direction: row;
+  }
+
+  .wp-block-book-display-book-block .blurb {
+    font-size: 25px;
+  }
+  
+  .wp-block-book-display-book-block .titlepage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .wp-block-book-display-book-block p {
+    display: block;
+  }
+
+  .wp-block-book-display-book-block .cover-style {
+    align-items: center; 
+  }
+
+  .wp-block-book-display-book-block .text-style {
+    max-width: 50%;
+    margin-left: 20px;
+  }
+}
+
+
