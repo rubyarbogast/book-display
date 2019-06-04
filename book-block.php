@@ -1,6 +1,11 @@
 <?php
 /*
 Plugin Name: Book Block
+TODO: Fix text width in tablet views
+TODO: Set styles if a field is missing
+TODO: Add option for links to purchase books
+TODO: Review custom sidebar options
+TODO: Give users option to place cover on right
 */
 function book_block_register_block() {
     wp_register_script(

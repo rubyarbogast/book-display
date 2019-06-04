@@ -50,20 +50,28 @@
   /* Flexbox styles */
   /* Column container */
   .row-flex {  
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .wp-block-book-display-book-block .blurb {
     font-size: 25px;
   }
-  
+
+}
+
+/* For desktop */
+@media only screen and (min-width: 1025px) {
+  .row-flex {  
+    flex-direction: row;
+  }
+    
+  .wp-block-book-display-book-block p {
+    display: block;
+  }
+
   .wp-block-book-display-book-block .titlepage {
     max-width: 100%;
     height: auto;
-  }
-
-  .wp-block-book-display-book-block p {
-    display: block;
   }
 
   .wp-block-book-display-book-block .cover-style {
@@ -75,5 +83,3 @@
     margin-left: 20px;
   }
 }
-
-
