@@ -82,4 +82,9 @@
     max-width: 50%;
     margin-left: 20px;
   }
+
+  .wp-block-book-display-book-block-right .text-style {
+    max-width: 50%;
+    margin-right: 20px;
+  }
 }

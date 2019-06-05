@@ -99,12 +99,11 @@
 					el( 'div', { className: props.className},
 						el ( RichText.Content, {
 							tagName: 'h2', value: attributes.title
-						} ),
-						el( 'div', {className: 'row-flex' },
-						attributes.mediaURL &&
-							el( 'div', { className: 'cover-style' },
-								el( 'img', { src: attributes.mediaURL, className: 'titlepage' } ),
-							),
+                        } ),
+                        
+                        el( 'div', {className: 'row-flex' },
+                        
+                            
 						el ( 'div', {className: 'text-style' },	
 							el( RichText.Content, {
 								tagName: 'h3', className: 'blurb', value: attributes.blurb
@@ -112,7 +111,13 @@
 							el( RichText.Content, {
 								tagName: 'p', className: 'summary', value: attributes.summary
 							} )
-						),
+                        ),
+                        
+                        attributes.mediaURL &&
+                        el( 'div', { className: 'cover-style' },
+                            el( 'img', { src: attributes.mediaURL, className: 'titlepage' } ),
+                        ),
+
 					)
 				)
 			);
