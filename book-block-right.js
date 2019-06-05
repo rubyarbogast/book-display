@@ -3,8 +3,8 @@
     var RichText = editor.RichText;
     var MediaUpload = editor.MediaUpload;
 
-    blocks.registerBlockType( 'book-display/book-block', {
-		title: i18n.__( 'Book Display: Cover Left', 'book-block' ),
+    blocks.registerBlockType( 'book-display/book-block-right', {
+		title: i18n.__( 'Book Display: Cover Right', 'book-block-right' ),
         icon: 'book-alt',
         category: 'layout',
         attributes: {
@@ -50,7 +50,7 @@
 						el (RichText, {
 							tagName: 'h2',
 							inline: false,
-							placeholder: i18n.__( 'Enter Book Title', 'book-block' ),
+							placeholder: i18n.__( 'Enter Book Title', 'book-block-right' ),
 							value: attributes.title,
 							onChange: function( value ){
 								props.setAttributes( { title: value } );
@@ -59,7 +59,7 @@
 						el( RichText, {
 							tagName: 'h3',
 							inline: false,
-							placeholder: i18n.__( 'Enter Book Blurb', 'book-block' ),
+							placeholder: i18n.__( 'Enter Book Blurb', 'book-block-right' ),
 							value: attributes.blurb,
 							onChange: function( value ) {
 								props.setAttributes( { blurb: value } );
@@ -75,7 +75,7 @@
 											className: attributes.mediaID ? 'image-button' : 'button button-large',
 											onClick: obj.open
 										},
-										! attributes.mediaID ? i18n.__( 'Upload Book Cover Image', 'book-block' ) : el( 'img', { src: attributes.mediaURL } )
+										! attributes.mediaID ? i18n.__( 'Upload Book Cover Image', 'book-block-right' ) : el( 'img', { src: attributes.mediaURL } )
 									);
 								}
 							} )
@@ -83,7 +83,7 @@
 					el( RichText, {
 						tagName: 'div',
 						inline: false,
-						placeholder: i18n.__( 'Enter Book Summary', 'book-block' ),
+						placeholder: i18n.__( 'Enter Book Summary', 'book-block-right' ),
 						value: attributes.summary,
 						onChange: function( value ) {
 							props.setAttributes( { summary: value } );
