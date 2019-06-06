@@ -24,6 +24,7 @@
     margin-bottom: 8px;
   }
 
+  /* Do not display the right-aligned cover image on small screens */
   .wp-block-book-display-book-block-right .row-flex .cover-style-right {
     display: none;
   }
@@ -60,6 +61,10 @@
 
   .wp-block-book-display-book-block .blurb {
     font-size: 25px;
+  }
+
+  .wp-block-book-display-book-block .h2 {
+    padding: 20px;
   }
 
 }

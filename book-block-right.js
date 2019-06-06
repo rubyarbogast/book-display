@@ -95,7 +95,6 @@
 		save: function( props ) {
 			var attributes = props.attributes;
 
-            //TODO: try using a hidden element for the photo
 			return (
 					el( 'div', { className: props.className},
 						el ( RichText.Content, {
@@ -103,7 +102,7 @@
                         } ),
                         
                         el( 'div', {className: 'row-flex' },
-                        
+                        //Image first for small screens
                         attributes.mediaURL &&
                         el( 'div', { className: 'cover-style-mobile' },
                             el( 'img', { src: attributes.mediaURL, className: 'titlepage' } ),
@@ -117,7 +116,7 @@
 								tagName: 'p', className: 'summary', value: attributes.summary
 							} )
                         ),
-                        
+                        //Image second for larger screens
                         attributes.mediaURL &&
                         el( 'div', { className: 'cover-style-right' },
                             el( 'img', { src: attributes.mediaURL, className: 'titlepage' } ),
