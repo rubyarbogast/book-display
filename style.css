@@ -83,19 +83,6 @@
   .row-flex {  
     flex-direction: row;
   }
-    
-  /* .wp-block-book-display-book-block p {
-    display: block;
-  }
-
-  .wp-block-book-display-book-block .titlepage {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .wp-block-book-display-book-block .cover-style {
-    align-items: center; 
-  } */
 
   .wp-block-book-display-book-block .text-style {
     max-width: 50%;
