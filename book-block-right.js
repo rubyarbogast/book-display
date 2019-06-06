@@ -5,7 +5,7 @@
 
     blocks.registerBlockType( 'book-display/book-block-right', {
 		title: i18n.__( 'Book Display: Cover Right', 'book-block-right' ),
-        icon: 'book-alt',
+        icon: 'book',
         category: 'layout',
         attributes: {
 			title: {
