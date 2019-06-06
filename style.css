@@ -13,12 +13,14 @@
     flex-direction: column;
   }
 
-  .wp-block-book-display-book-block .titlepage {
+  .wp-block-book-display-book-block .titlepage,
+  .wp-block-book-display-book-block-right .titlepage {
     margin-top: 2px;
     margin-bottom: 2px;
   }
 
-  .wp-block-book-display-book-block .blurb {
+  .wp-block-book-display-book-block .blurb,
+  .wp-block-book-display-book-block-right .blurb {
     font-size: 20px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -38,12 +40,14 @@
     flex-direction: column;
   }
 
-  .wp-block-book-display-book-block .titlepage {
+  .wp-block-book-display-book-block .titlepage,
+  .wp-block-book-display-book-block-right .titlepage {
     margin-top: 2px;
     margin-bottom: 2px;
   } 
 
-  .wp-block-book-display-book-block .blurb {
+  .wp-block-book-display-book-block .blurb,
+  .wp-block-book-display-book-block-right .blurb {
     font-size: 20px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -59,11 +63,13 @@
     flex-direction: column;
   }
 
-  .wp-block-book-display-book-block .blurb {
+  .wp-block-book-display-book-block .blurb,
+  .wp-block-book-display-book-block-right .blurb {
     font-size: 25px;
   }
 
-  .wp-block-book-display-book-block .h2 {
+  .wp-block-book-display-book-block .h2,
+  .wp-block-book-display-book-block-right .h2 {
     padding: 20px;
   }
 
@@ -78,7 +84,7 @@
     flex-direction: row;
   }
     
-  .wp-block-book-display-book-block p {
+  /* .wp-block-book-display-book-block p {
     display: block;
   }
 
@@ -89,7 +95,7 @@
 
   .wp-block-book-display-book-block .cover-style {
     align-items: center; 
-  }
+  } */
 
   .wp-block-book-display-book-block .text-style {
     max-width: 50%;

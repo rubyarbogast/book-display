@@ -11,12 +11,12 @@
 			title: {
 				type: 'array',
 				source: 'children',
-				selector: 'h2',
+				selector: 'h3',
 			},
             blurb: {
                 type: 'array',
                 source: 'children',
-                selector: 'h3',
+                selector: 'h4',
             },
             mediaID: {
 				type: 'number',
@@ -48,7 +48,7 @@
 			return (
 					el( 'div', { className: props.className },
 						el (RichText, {
-							tagName: 'h2',
+							tagName: 'h3',
 							inline: false,
 							placeholder: i18n.__( 'Enter Book Title', 'book-block' ),
 							value: attributes.title,
@@ -57,7 +57,7 @@
 							}
 						} ),
 						el( RichText, {
-							tagName: 'h3',
+							tagName: 'h4',
 							inline: false,
 							placeholder: i18n.__( 'Enter Book Blurb', 'book-block' ),
 							value: attributes.blurb,
@@ -98,7 +98,7 @@
 			return (
 					el( 'div', { className: props.className},
 						el ( RichText.Content, {
-							tagName: 'h2', value: attributes.title
+							tagName: 'h3', value: attributes.title
 						} ),
 						el( 'div', {className: 'row-flex' },
 						attributes.mediaURL &&
@@ -107,7 +107,7 @@
 							),
 						el ( 'div', {className: 'text-style' },	
 							el( RichText.Content, {
-								tagName: 'h3', className: 'blurb', value: attributes.blurb
+								tagName: 'h4', className: 'blurb', value: attributes.blurb
 							} ),
 							el( RichText.Content, {
 								tagName: 'p', className: 'summary', value: attributes.summary

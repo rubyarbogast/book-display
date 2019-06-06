@@ -1,10 +1,9 @@
 <?php
 /*
 Plugin Name: Book Block
-TODO: Add option for links to purchase books
-TODO: Review custom sidebar options
-TODO: Give users option to place cover on right
 TODO: Review for redundancies 
+TODO: Test without custom template
+TODO: Look at transformable blocks
 */
 function book_block_register_block() {
     wp_register_script(
