@@ -52,7 +52,7 @@
 }
 
 /* For larger tablets */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* Flexbox styles */
   /* Column container */
   .row-flex {  
@@ -67,6 +67,9 @@
     padding: 20px;
   }
 
+  .wp-block-book-display-book-block-right .row-flex .cover-style-right {
+    display: none;
+  }
 }
 
 /* For desktop */
@@ -99,8 +102,8 @@
   }
 
   .wp-block-book-display-book-block-right .row-flex .cover-style-mobile {
-    display: none;
-  }
+   display: none;
+  } 
 
   .wp-block-book-display-book-block-right .row-flex .cover-style-right {
     display: block;
