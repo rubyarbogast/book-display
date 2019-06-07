@@ -31,8 +31,12 @@
                 type: 'array',
                 source: 'children',
                 selector: 'p',
-            }
-
+			},
+			purchase: {
+				type: 'array',
+				source: 'children',
+				selector: '.purchase-links',
+			}
         },
  
         edit: function( props ) {
@@ -88,6 +92,15 @@
 						onChange: function( value ) {
 							props.setAttributes( { summary: value } );
 						},
+					} ),
+					el( RichText, {
+						tagName: 'div',
+						inline: false,
+						placeholder: i18n.__( 'Enter Links to Purchase Book', 'book-block' ),
+						value: attributes.purchase,
+						onChange: function( value ) {
+							props.setAttributes( { purchase: value } );
+						},
 					} )
 				)
 			);
@@ -111,6 +124,9 @@
 							} ),
 							el( RichText.Content, {
 								tagName: 'p', className: 'summary', value: attributes.summary
+							} ),
+							el( RichText.Content, {
+								tagName: 'p', className: 'purchase-links', value: attributes.purchase
 							} )
 						),
 					)

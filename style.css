@@ -94,6 +94,11 @@
     margin-right: 20px;
   }
 
+  .wp-block-book-display-book-block .purchase-links,
+  .wp-block-book-display-book-block-right .purchase-links {
+    text-align: center;
+  }
+
   .wp-block-book-display-book-block-right .row-flex .cover-style-mobile {
    display: none;
   } 
