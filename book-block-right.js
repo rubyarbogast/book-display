@@ -1,3 +1,5 @@
+//TODO: A separate controller is not ideal; update to use WordPress alignment tools when they are made available
+
 ( function( blocks, editor, i18n, element, components, _ ) {
     var el = element.createElement;
     var RichText = editor.RichText;
