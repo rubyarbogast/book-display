@@ -1,10 +1,12 @@
 <?php
-/*
-Plugin Name: Book Block
-TODO: Review for redundancies 
-TODO: Test without custom template
-TODO: Look at transformable blocks
-*/
+/**
+ * Plugin Name: Book Block
+ * Plugin URI: https://github.com/rubyarbogast/book-display
+ * Description: A WordPress plugin that creates a custom Gutenberg block to display a book cover, blurb, and synopsis. 
+ * Version: 1.0
+ * Author: Ruby Arbogast
+ *
+ */
 function book_block_register_block() {
     wp_register_script(
         'book-block',
